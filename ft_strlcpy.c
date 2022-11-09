@@ -6,14 +6,14 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:41:10 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:58:37 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/09 17:01:45 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcpy(char *dest, char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	src_size;

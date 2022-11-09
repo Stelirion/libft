@@ -6,14 +6,14 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:47:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:58:35 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/09 17:02:27 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char *dest,const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	j;

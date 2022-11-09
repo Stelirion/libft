@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:50:47 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:56:33 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/09 16:51:29 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_atoi(char *str)
 	{
 		i++;
 	}
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			k *= -1;
