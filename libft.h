@@ -32,7 +32,7 @@ int				ft_tolower(int c);
 char			*ft_strchr(const char *str, int c);
 char			*ft_strrchr(const char *str, int c);
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
-//memchr
+void			*ft_memchr( const void *src, int c, size_t size );
 //memcmp
 char			*ft_strnstr(char *str, char *to_find, int size);
 int				ft_atoi(char *str);
