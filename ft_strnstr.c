@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 17:34:21 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:58:45 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/13 15:42:05 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(char *str, char *to_find, int size)
 	{
 		if (to_find[c] == str[i])
 			c++;
-		else if (to_find != '\0')
+		else if (to_find[c] != '\0')
 		{
 			i = i - c;
 			c = 0;
@@ -35,5 +35,5 @@ char	*ft_strnstr(char *str, char *to_find, int size)
 			return (&str[i - c + 1]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
