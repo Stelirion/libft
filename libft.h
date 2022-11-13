@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:07:52 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 17:02:55 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/13 15:45:30 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,7 @@ void			*ft_memchr( const void *src, int c, size_t size );
 //memcmp
 char			*ft_strnstr(char *str, char *to_find, int size);
 int				ft_atoi(char *str);
+//calloc
+//strdup
 
 #endif
