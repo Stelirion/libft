@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memchr.c                                           :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:08:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/10 14:08:56 by ngennaro         ###   ########.fr       */
+/*   Updated: 2022/11/13 14:32:08 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,20 @@
 
 void	*ft_memchr( const void *src, int c, size_t size )
 {
+    unsigned int	i;
+    char            *str;
+    
+	
+	i = 0;
+    str = (char *)src;
+	while (i < size)
+	{
+		if (str[i] == c)
+			return ((void *)str + i);
+		i++;
+	}
+	return (NULL);
+
 
 }
 

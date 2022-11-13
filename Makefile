@@ -6,7 +6,7 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/09 14:59:24 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/13 14:34:11 by ngennaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ ft_tolower.c \
 ft_strchr.c \
 ft_strrchr.c \
 ft_strncmp.c \
-ft_memchr \
+ft_memchr.c \
 ft_strnstr.c \
 ft_atoi.c
 
