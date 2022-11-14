@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:08:49 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:58:13 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/14 11:39:24 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_isascii(int c)
 {
-	if (0 <= c && c <= 126)
+	if (0 <= c && c <= 127)
 		return (1);
 	else
 		return (0);

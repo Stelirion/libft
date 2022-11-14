@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:12:03 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:58:18 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/14 11:55:06 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_isprint(int c)
 {
-	if (33 <= c && c <= 126)
+	if ((32 <= c && c <= 126))
 		return (1);
 	else
 		return (0);

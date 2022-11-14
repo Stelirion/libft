@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/14 10:42:59 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 11:59:07 by ngennaro         ###   ########lyon.fr   */
+/*   Created: 2022/11/14 13:08:51 by ngennaro          #+#    #+#             */
+/*   Updated: 2022/11/14 13:16:39 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_strdup(const char *src)
+void	*ft_memmove(void *dest, const void *src, size_t size)
 {
-	int		len;
-	int		i;
-	char	*str_cpy;
+	unsigned int	i;
+	unsigned char	*char_dest;
+	unsigned char	*char_src;
 
+	char_dest = (unsigned char *)dest;
+	char_src = (unsigned char *)src;
 	i = 0;
-	len = ft_strlen((char *)src);
-	str_cpy = malloc(len * sizeof(char *));
-	if (str_cpy == NULL)
-		return (0);
-	while (i <= len)
+	while (i < size)
 	{
-		str_cpy[i] = src[i];
+		char_dest[i] = char_src[i];
 		i++;
 	}
-	str_cpy[i] = '\0';
-	return (str_cpy);
+	return (dest);
 }
