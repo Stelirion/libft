@@ -1,39 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 16:47:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 10:51:26 by ngennaro         ###   ########lyon.fr   */
+/*   Created: 2022/11/14 10:56:33 by ngennaro          #+#    #+#             */
+/*   Updated: 2022/11/14 11:22:57 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
+int	memcmp(const void *void_s1, const void *void_s2, size_t n)
 {
 	unsigned int	i;
-	unsigned int	j;
-	unsigned int	k;
+	char			*s1;
+	char			*s2;
 
 	i = 0;
-	j = 0;
-	k = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0')
-		j++;
-	if (size < j)
-		return (j + size);
-	while (src[k] && i < (size))
+	s1 = (char *)void_s1;
+	s2 = (char *)void_s2;
+	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
 	{
-		dest[i] = src[k];
-		k++;
-		i++;
+		if ((s1[i] > s2[i]) || (s2[i] == '\0' && s1[i] != '\0'))
+			return (1);
+		if ((s1[i] < s2[i]) || (s1[i] == '\0' && s2[i] != '\0'))
+			return (-1);
+		else
+			i++;
 	}
-	dest[i] = '\0';
-	return (i + j);
+	return (0);
 }

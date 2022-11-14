@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 16:47:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 10:51:26 by ngennaro         ###   ########lyon.fr   */
+/*   Created: 2022/11/14 10:42:59 by ngennaro          #+#    #+#             */
+/*   Updated: 2022/11/14 10:54:42 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
+char	*ft_strdup(const char *src)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	k;
+	int		len;
+	int		i;
+	char	*str_cpy;
 
 	i = 0;
-	j = 0;
-	k = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0')
-		j++;
-	if (size < j)
-		return (j + size);
-	while (src[k] && i < (size))
+	len = ft_strlen((char *)src);
+	str_cpy = malloc(len * sizeof(char));
+	if (str_cpy == NULL)
+		return (0);
+	while (i <= len)
 	{
-		dest[i] = src[k];
-		k++;
+		str_cpy[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (i + j);
+	str_cpy[i] = '\0';
+	return (str_cpy);
 }
