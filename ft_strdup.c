@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 10:42:59 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 11:59:07 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 17:11:33 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *src)
 	char	*str_cpy;
 
 	i = 0;
-	len = ft_strlen((char *)src);
+	len = ft_strlen(src);
 	str_cpy = malloc(len * sizeof(char *));
 	if (str_cpy == NULL)
 		return (0);

@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:33:00 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/09 14:58:49 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 15:30:37 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ char	*ft_strrchr(const char *str, int c)
 		i++;
 	while (i > 0)
 	{
-		if (str[i] == c)
+		if (str[i] == (char)c)
 			return ((char *)str + i);
 		i--;
 	}
-	if (str[i] == c)
+	if (str[i] == (char)c)
 		return ((char *)str + i);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 10:56:33 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 20:45:40 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/15 16:37:08 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	t1 = (unsigned const char *)s1;
 	t2 = (unsigned const char *)s2;
-	if (t1 == NULL || t2 == NULL)
-		return (0);
 	while (n)
 	{
 		if (*t1 != *t2)
