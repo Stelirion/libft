@@ -6,7 +6,7 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/14 13:15:59 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/14 20:16:15 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,8 @@ ft_memchr.c \
 ft_strnstr.c \
 ft_atoi.c \
 ft_strdup.c \
-ft_memmove.c
+ft_memmove.c \
+ft_calloc.c
 
 OBJS	= ${SRCS:.c=.o}
 

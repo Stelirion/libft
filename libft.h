@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:07:52 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 13:23:42 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/14 20:34:00 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int				ft_isascii(int c);
 int				ft_isprint(int c);
 unsigned int	ft_strlen(const char *str);
 void			*ft_memset(void *b, int c, size_t len);
-void			ft_bzero(void *b, int len);
+void			ft_bzero(void *b, size_t len);
 void			*ft_memcpy(void *dest, const void *src, size_t size);
 void			*ft_memmove(void *dest, const void *src, size_t size);
 size_t			ft_strlcpy(char *dest, const char *src, size_t size);
@@ -36,7 +36,7 @@ void			*ft_memchr( const void *src, int c, size_t size );
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strnstr(const char *str, const char *to_find, size_t size);
 int				ft_atoi(const char *str);
-//calloc
+void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(const char *src);
 
 #endif
