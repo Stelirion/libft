@@ -6,7 +6,7 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/16 17:06:12 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/16 17:28:12 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,14 +35,15 @@ ft_calloc.c \
 ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
-ft_strtrim.c
+ft_strtrim.c \
+ft_itoa.c
 
 #ft_split.c
-#ft_itoa.c
+#ft_itoa.c			include
 #ft_strmapi.c
 #ft_striteri.c
 #ft_putchar_fd.c
-#ft_putstr_fd.c
+#ft_putstr_fd.c3
 #ft_putendl_fd.c
 #ft_putnbr_fd.c
 
