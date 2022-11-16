@@ -6,12 +6,11 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:08:51 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/15 17:56:30 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 13:39:23 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -6,12 +6,11 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:33:00 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/15 15:30:37 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 13:39:59 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strrchr(const char *str, int c)
 {

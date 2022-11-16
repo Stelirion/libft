@@ -6,12 +6,11 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:50:47 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 11:33:07 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 13:38:55 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 int	ft_atoi(const char *str)
 {

@@ -6,12 +6,11 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 10:56:33 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/15 16:37:08 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 13:39:18 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

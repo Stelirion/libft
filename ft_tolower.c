@@ -6,12 +6,11 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 17:30:51 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/14 12:03:38 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 13:40:02 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 int	ft_tolower(int c)
 {

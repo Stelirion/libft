@@ -6,12 +6,11 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:47:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/15 17:57:01 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/16 13:39:43 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -23,7 +22,7 @@ unsigned int	ft_strlcat(char *dest, const char *src, size_t size)
 	j = 0;
 	k = 0;
 	if (size == 0)
-		return (0);
+		return (ft_strlen(src));
 	while (dest[i] != '\0')
 		i++;
 	while (src[j] != '\0')
