@@ -6,7 +6,7 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/16 17:28:12 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/17 13:29:16 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,11 +35,10 @@ ft_calloc.c \
 ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
-ft_strtrim.c \
-ft_itoa.c
+ft_strtrim.c
 
 #ft_split.c
-#ft_itoa.c			include
+#ft_itoa.c
 #ft_strmapi.c
 #ft_striteri.c
 #ft_putchar_fd.c
@@ -56,7 +55,7 @@ NAME	= libft.a
 CFLAGS	= -Wall -Wextra -Werror
 
 .c.o:		$(HEADERS)
-			${CC} -c $< -o $@ -I .
+			${CC} ${CFLAGS} -c $< -o $@ -I .
 
 ${NAME} :	${OBJS}
 			$(AR) -rcs ${NAME} ${OBJS}

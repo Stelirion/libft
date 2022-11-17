@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:46:00 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/17 11:39:14 by ngennaro         ###   ########.fr       */
+/*   Updated: 2022/11/17 13:29:41 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i;
 	int		start;
 	int		end;
-	char	*str;
 
 	i = 0;
 	start = 0;
