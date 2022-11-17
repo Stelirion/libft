@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:46:00 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/16 17:01:58 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/17 11:39:14 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,15 +44,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while (to_trim(s1[i--], set))
 		end ++;
-	str = malloc(sizeof(char) * (ft_strlen(s1) - start - end + 1));
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (i < (ft_strlen(s1) - start - end))
-	{
-		str[i] = s1[start + i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
+	return (ft_substr(s1, start, (ft_strlen(s1) - start - end)));
 }
