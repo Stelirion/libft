@@ -6,30 +6,53 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 12:52:02 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/16 13:48:09 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/17 15:35:03 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+static char	*copy(char *dest, char *src, size_t len)
 {
 	size_t	i;
-	char	*str;
 
 	i = 0;
-	if (!s)
-		return (NULL);
-	if (start >= ft_strlen(s))
-		return (ft_strdup(""));
-	str = malloc(sizeof(char) * (len + 1));
-	if (!str)
-		return (NULL);
-	while (s[start + i] && i < len)
+	if (len > 0)
 	{
-		str[i] = s[start + i];
+		while (src[i] != '\0' && i < len)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
+	}
+	return (dest);
+}
+
+char	*ft_substr(const char *s, unsigned int start, size_t len)
+{
+	unsigned int	i;
+	char			*str;
+	char			*substr;
+
+	i = 0;
+	if (s == NULL)
+		return (NULL);
+	if (start >= ft_strlen(s) || len == 0)
+		return (ft_strdup(""));
+	if (len > ft_strlen(s))
+		len = ft_strlen(s);
+	substr = (char *)malloc(sizeof(char) * len + 1);
+	if (!substr)
+		return (NULL);
+	str = (char *)s;
+	while (str[i] != '\0')
+	{
+		if (i == start)
+		{
+			substr = copy(substr, &str[start], len);
+		}
 		i++;
 	}
-	str[i] = '\0';
-	return (str);
+	return (substr);
 }
