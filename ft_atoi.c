@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 16:50:47 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/17 14:36:32 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 13:31:25 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ static int	mul_overflow(long long int *dst, long long int a, long long int b)
 
 int	ft_atoi(const char *str)
 {
-	int				i;
-	int				j;
-	int				k;
+	size_t			i;
+	size_t			j;
+	size_t			k;
 	long long int	res;
 
 	i = 0;
