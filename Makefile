@@ -6,7 +6,7 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/22 11:33:11 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/23 08:52:18 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,12 +40,10 @@ ft_putchar_fd.c \
 ft_putstr_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c \
-ft_itoa.c
-
-#ft_split.c
-#ft_itoa.c
-#ft_strmapi.c
-#ft_striteri.c
+ft_itoa.c \
+ft_strmapi.c \
+ft_split.c \
+ft_striteri.c
 
 OBJS	= ${SRCS:.c=.o}
 
