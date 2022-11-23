@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 17:51:43 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/23 14:31:08 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/23 16:07:47 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,22 @@ static char	**setup_tab(char const *s, char c)
 	return (tab);
 }
 
+static size_t	word_len(size_t size, char c, size_t *i, char const *s)
+{
+	size = 0;
+	while (s[*i] && s[*i] != c)
+	{
+		*i = *i + 1;
+		size++;
+	}
+	return (size);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	words;
 	size_t	size;
-	size_t	start;
 	char	**tab;
 
 	i = 0;
@@ -67,17 +77,10 @@ char	**ft_split(char const *s, char c)
 			i++;
 		else if (s[i] != c)
 		{
-			size = 0;
-			start = i;
-			while (s[i] && s[i] != c)
-			{
-				i++;
-				size++;
-			}
-			tab[words] = ft_substr(s, start, size);
-			if (!tab[words])
+			size = word_len(size, c, &i, s);
+			tab[words] = ft_substr(s, (i - size), size);
+			if (!tab[words++])
 				return (free_all(tab, words));
-			words++;
 		}
 	}
 	tab[words] = NULL;
