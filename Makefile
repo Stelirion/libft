@@ -6,7 +6,7 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/23 08:52:18 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/23 16:31:47 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,27 +47,29 @@ ft_striteri.c
 
 OBJS	= ${SRCS:.c=.o}
 
+CC	= cc
+
 HEADERS	= libft.h
 
 NAME	= libft.a
 
 CFLAGS	= -Wall -Wextra -Werror
 
-.c.o:		$(HEADERS)
-			${CC} ${CFLAGS} -c $< -o $@ -I .
-
-${NAME} :	${OBJS}
-			$(AR) -rcs ${NAME} ${OBJS}
-
 all :		${NAME}
 
 clean :
-			${RM} ${OBJS}
+			rm -f ${OBJS}
 
 fclean :	clean
-			${RM} ${NAME}
+			rm -f ${NAME}
 
 re :		fclean
 			$(MAKE) all
 
-.PHONY:		.c.o $(NAME) all clean fclean re
+%.o: %.c	$(HEADERS) Makefile
+			${CC} ${CFLAGS} -o $@ -c $< -I $(HEADERS)
+
+${NAME} :	${OBJS}
+			ar -rc ${NAME} ${OBJS}
+
+.PHONY:		all clean fclean re
